@@ -1,194 +1,207 @@
+/* =========================
+   Base Styles
+========================= */
 
-
-.orange-section{
-    background-color: #FF6D2C;
-    /* padding: 95px 0px; */
+.orange-section {
+  background-color: #FF6D2C;
+  /* padding: 80px 0; */
 }
 
-.orange{
-    display: flex;
-    justify-content: space-between;
-    /* gap: 130px; */
+.orange {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
 
+/* =========================
+   Left Content
+========================= */
 
-.orange-left h2{
-    color: #ffff;
-    padding-top: 100px;
-
-    font-size: 86px;
-    font-weight: 700;
-    line-height: 96px;
-
-    margin-bottom: 17px;
-
-
+.orange-left {
+  flex: 1;
 }
 
-.orange-left p{
-    font-size: 20px;
-    font-weight: 500;
- color: #ffff;
-    margin-bottom: 48px;
+.orange-left h2 {
+  color: #ffffff;
+  font-size: 86px;
+  font-weight: 700;
+  line-height: 96px;
+  margin-bottom: 20px;
 }
 
-
-.foot p{
-    color: #ffff;
-    font-size: 14px;
-    font-weight: 500;
- color: #ffff;
-}
-.orange-right img{
-    width: 80%;
-
+.orange-left p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 48px;
 }
 
-.orange-btn{
-    display: flex;
-    gap: 40px;
-    /* align-items: center; */
-    /* justify-content: space-between; */
+/* =========================
+   Buttons & Rating
+========================= */
+
+.orange-btn {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-
-.o-star{
-    display: flex;
-    margin: 10px;
+.o-btn button {
+  padding: 22px 44px;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-shadow: 3px 3px 0px #000;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-
-
-
-.o-star i{
-font-size: 16px;
-    color: white;
-
-}
-.s-p{
-
-    
-    font-size: 16px;
-    color: white;
-    font-weight: 500;
-    
-}
-.o-btn button{
-    padding: 22px 44px;
-    box-shadow: 3px 3px 0px black;
-    border: 2px solid black;
-    background-color: white;
-    font-size: 13px;
-    border-radius: 15px;
-}
-
-
-.o-btn button:hover{
+.o-btn button:hover {
   color: #ec4d09;
-  transition: 0.5s ease;
-  border: 2px solid white;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.623);
-
+  border-color: #ffffff;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.6);
 }
 
+.o-star {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.o-star i {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.s-p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* =========================
+   Right Image
+========================= */
+
+.orange-right {
+  flex: 1;
+  text-align: right;
+}
+
+.orange-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   Footer Text
+========================= */
+
+.foot p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
 
 /* =========================
    Tablet (≤1024px)
 ========================= */
+
 @media (max-width: 1024px) {
 
-  .orange{
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
+  .orange {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
   }
 
-  .orange-left h2{
+  .orange-left h2 {
     font-size: 56px;
     line-height: 66px;
-    padding-top: 70px;
-    text-align: center;
   }
 
-  .orange-left p{
+  .orange-left p {
     font-size: 18px;
-    text-align: center;
   }
 
-  .orange-btn{
+  .orange-btn {
     justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
   }
 
-  .orange-right{
+  .orange-right {
+    text-align: center;
     width: 80%;
-    margin: auto;
   }
 }
 
 /* =========================
    Mobile (≤600px)
 ========================= */
+
 @media (max-width: 600px) {
 
-  .orange{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .orange-section {
+    padding: 60px 0;
   }
 
-  .orange-left h2{
+  .orange-left h2 {
     font-size: 36px;
     line-height: 44px;
-    padding-top: 50px;
   }
 
-  .orange-left p{
+  .orange-left p {
     font-size: 16px;
     margin-bottom: 32px;
   }
 
-  .orange-btn{
+  .orange-btn {
     flex-direction: column;
-    align-items: center;
     gap: 20px;
   }
 
-  .o-btn button{
+  .o-btn button {
     padding: 18px 32px;
     font-size: 12px;
   }
 
-  .orange-right{
-    width: 100%;
+  .s-p {
+    font-size: 14px;
   }
 
-  .star{
-    justify-content: center;
+  .orange-right {
+    width: 100%;
   }
 }
 
 /* =========================
    Small Mobile (≤360px)
 ========================= */
+
 @media (max-width: 360px) {
 
-  .orange-left h2{
+  .orange-left h2 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  .orange-left p{
+  .orange-left p {
     font-size: 14px;
   }
 
-  .o-btn button{
+  .o-btn button {
     padding: 16px 28px;
     font-size: 11px;
   }
 
-  .s-p{
-    font-size: 14px;
+  .s-p {
+    font-size: 13px;
   }
 }
+
