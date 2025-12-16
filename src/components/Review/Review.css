@@ -1,0 +1,179 @@
+.review-section {
+    background-color: #FDF3EA;
+}
+
+.review {
+    padding: 100px;
+}
+
+.review h3 {
+    width: 100%;
+    max-width: 941px;
+    font-size: 70px;
+    line-height: 76px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto 150px;
+}
+
+/* --- Cards --- */
+
+.r-cards {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;       /* Responsive */
+    gap: 40px;
+}
+
+.r-card {
+    width: 485px;
+    max-width: 100%;        /* Responsive */
+    margin-bottom: 150px;
+}
+
+.r-card h4 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #2E2F35;
+    margin-bottom: 34px;
+}
+
+.r-card p {
+    font-size: 20px;
+    line-height: 34px;
+    color: #58595D;
+    margin-bottom: 38px;
+}
+
+.r-bottom {
+    border: 2px solid #D1C7BE;
+    border-radius: 15px;
+    padding: 24px;
+}
+
+/* footer inside card */
+.r-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.r-foot p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A89B90;
+}
+
+.r-foot img {
+    width: 53px;
+    height: 24px;
+}
+
+.review-button button {
+    background-color: #ff6d2c;
+    font-size: 16px;
+    border: 2px solid #2e2f35;
+    box-shadow: 3px 3px 0px #2E2F35;
+    border-radius: 15px;
+    padding: 22px 66px;
+}
+
+.review-button button:hover {
+    background-color: rgb(252, 77, 2);
+    transform: scale(1.1);
+    color: white;
+    transition: 1s ease;   
+}
+
+
+
+
+.r-last {
+    margin-bottom: 50px;
+}
+
+
+/* ============================== */
+/*        RESPONSIVE PART         */
+/* ============================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .review {
+        padding: 50px;
+    }
+
+    .review h3 {
+        font-size: 50px;
+        line-height: 58px;
+        margin-bottom: 100px;
+    }
+
+    .r-card {
+        margin-bottom: 100px;
+    }
+
+    .r-card h4 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+
+    .r-card p {
+        font-size: 18px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .review {
+        padding: 30px;
+    }
+
+    .review h3 {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 60px;
+        padding: 0 10px;
+    }
+
+    .r-cards {
+        justify-content: center; /* center cards on mobile */
+    }
+
+    .r-card {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .r-card h4 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .r-card p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .review-button button {
+        width: 100%;
+        padding: 18px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .review h3 {
+        font-size: 28px;
+    }
+
+    .r-card h4 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .r-card p {
+        font-size: 14px;
+    }
+}

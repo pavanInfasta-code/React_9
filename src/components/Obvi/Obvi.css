@@ -1,0 +1,231 @@
+
+
+.obvi-section{
+    padding: 100px 0px;
+    background-color: #EEECFF;
+}
+
+
+.obvi{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.obvi-left img{
+    width: 100%;
+}
+.obvi-title h3{
+    font-size: 63px;
+    line-height: 76px;
+    font-weight: 700;
+    margin-bottom: 36px;
+
+}
+
+.values{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.obvi2 p{
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    margin-bottom: 48px;
+}
+
+
+
+.obvi2 button{
+
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 3px 3px 0px black;
+    border-radius: 15px;
+    border: 2px solid black;
+
+    padding: 22px 40px;
+    background-color: white;
+
+    margin-bottom: 50px;
+
+}
+
+.obvi2 button:hover{
+
+  color: white;
+  background-color: #58595d;
+  transition: 0.5s ease;
+}
+.value h3{
+    font-size: 34px;
+    color: #2e2f35;
+    font-weight: 700;
+
+}
+
+.value h6{
+    color: #58595d;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+
+.logos {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.logos img {
+  width: 100px;
+  height: auto;
+  opacity: 0.3;            /* dim by default */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logos img.active {
+  opacity: 1;               /* bright when active */
+  transform: scale(1.1);    /* optional: slight zoom effect */
+}
+
+
+.side {
+    flex: 0 0 calc(100%/2 - 40px);
+}
+
+
+
+/* =========================
+   Tablet (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+  .obvi {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .obvi-title h3 {
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+  }
+
+  .values {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .value {
+    flex: 1 1 200px; /* responsive card width */
+    text-align: center;
+  }
+
+  .obvi2 p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .obvi2 button {
+    padding: 18px 32px;
+    font-size: 13px;
+  }
+
+  .logos img {
+    width: 80px;
+  }
+
+  .side {
+    flex: 0 0 calc(100% - 40px);
+}
+
+
+.obvi-left{
+  max-width:60%
+}
+
+}
+
+/* =========================
+   Mobile (≤600px)
+========================= */
+@media (max-width: 600px) {
+  .obvi {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .obvi-title h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+    /* width: 80%; */
+  .values {
+    /* flex-direction: column; */
+    gap: 16px;
+  }
+
+  .value h3 {
+    font-size: 24px;
+  }
+
+  .obvi2 p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .obvi2 button {
+    padding: 16px 28px;
+    font-size: 12px;
+  }
+
+  .logos img {
+    width: 60px;
+  }
+}
+
+/* =========================
+   Small Mobile (≤360px)
+========================= */
+@media (max-width: 360px) {
+  .obvi-title h3 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .value h3 {
+    font-size: 20px;
+  }
+
+  .obvi2 p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .obvi2 button {
+    padding: 14px 24px;
+    font-size: 11px;
+  }
+
+  .logos img {
+    width: 50px;
+  }
+}

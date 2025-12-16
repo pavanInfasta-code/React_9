@@ -1,0 +1,244 @@
+/* ===== Post Section ===== */
+.post-section{
+  padding: 95px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+.post-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-button button{
+  background-color: #FF6D2C;
+  padding: 22px 60px;
+  font-size: 15px;
+  color: white;
+  box-shadow: 3px 3px 0px black;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post-button button:hover{
+  background-color: rgb(187, 198, 208);
+  color: black;
+}
+
+/* ===== Slider Wrapper ===== */
+.slider-wrapper{
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.slider{
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+
+/* ===== Title ===== */
+.p-title h3{
+  font-size: 63px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.p-title .style{
+  color: #009387;
+}
+
+/* ===== Slider Track ===== */
+.slider-track{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 100px;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+  align-items: stretch; /* ✅ ensures equal height cards */
+}
+
+/* Pause on hover */
+.slider:hover .slider-track{
+  animation-play-state: paused;
+}
+
+/* ===== Cards ===== */
+.p-card{
+  border: 2px solid #000;
+  padding: 20px;
+  width: 410px;
+  height: auto;              /* ✅ fixed height */
+  border-radius: 15px;
+  background: #fff;
+  flex-shrink: 0;
+
+  display: flex;              /* ✅ important */
+  flex-direction: column;
+  overflow: hidden;           /* ✅ ENFORCES HEIGHT */
+}
+
+/* Card header */
+.card-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-shrink: 0;             /* ✅ prevents height break */
+}
+
+.card-title .img{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-title img{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.img-content h4{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.img-content h5{
+  font-size: 14px;
+  color: #666;
+}
+
+/* Card text */
+.p-card p{
+  font-size: 16px;
+  line-height: 28px;
+  color: #333;
+
+  flex: 1;                    /* ✅ fills remaining space */
+  overflow: hidden;           /* ✅ no overflow */
+}
+
+/* ===== Slider Animation ===== */
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================
+   Tablet (≤1024px)
+========================= */
+@media (max-width: 1024px){
+  .p-title h3{
+    font-size: 44px;
+  }
+
+  .p-card{
+    width: 340px;
+    height: 200px;
+  }
+
+  .slider-track{
+    gap: 24px;
+  }
+
+  .card-title img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .img-content h4{
+    font-size: 15px;
+  }
+
+  .img-content h5{
+    font-size: 13px;
+  }
+
+  .p-card p{
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+
+/* =========================
+   Mobile (≤600px)
+========================= */
+@media (max-width: 600px){
+  .p-title h3{
+    font-size: 32px;
+  }
+
+  .p-card{
+    width: 280px;
+    height: 200px;
+    padding: 16px;
+  }
+
+  .slider-track{
+    gap: 20px;
+  }
+
+  .card-title img{
+    width: 36px;
+    height: 36px;
+  }
+
+  .img-content h4{
+    font-size: 14px;
+  }
+
+  .img-content h5{
+    font-size: 12px;
+  }
+
+  .p-card p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+/* =========================
+   Small Mobile (≤360px)
+========================= */
+@media (max-width: 360px){
+  .p-title h3{
+    font-size: 26px;
+  }
+
+  /* .p-card{
+    width: 240px;
+    height: 360px;
+  } */
+
+  .card-title img{
+    width: 32px;
+    height: 32px;
+  }
+
+  .img-content h4{
+    font-size: 13px;
+  }
+
+  .img-content h5{
+    font-size: 11px;
+  }
+
+  .p-card p{
+    font-size: 13px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,114 @@
+
+
+
+.brand{
+    padding: 100px 0px;
+}
+
+.c1{
+    background-color: #d1f8e4;
+}
+
+.c2{
+    background-color: #baecdf;
+}
+
+.c3{
+    background-color: #e3efbf;
+}
+
+
+.c4{
+    background-color: #c0caf5;
+}
+
+.c5{
+    background-color: #f5dac3;
+}
+
+.c6{
+    background-color: #d7f1c7;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px -20px;
+}
+.card{
+    padding: 60px 40px;
+    border-radius: 13px;
+    flex: 0 0 calc(100%/3 - 40px);
+    margin: 20px;
+}
+
+
+.brand h3{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76px;
+    letter-spacing: -2;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.brand img{
+    margin-bottom: 48px;
+    width: 100%;
+}
+
+.card h4{
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #2e2f35;
+    margin-bottom: 8px;
+}
+
+.card p{
+    color: #58595D;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+
+}
+
+
+
+
+/* ===== Tablet (2 cards per row) ===== */
+@media (max-width: 1024px){
+    .card{
+        flex: 0 0 calc(50% - 40px);
+    }
+
+    .brand h3{
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+
+
+/* ===== Mobile (1 card per row) ===== */
+@media (max-width: 600px){
+    .card{
+        flex: 0 0 calc(100% - 40px);
+    }
+    .cards{
+        margin: 0px;
+    }
+
+    .brand{
+        padding: 60px 0;
+    }
+
+    .brand h3{
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+
+    .card{
+        padding: 40px 24px;
+    }
+}

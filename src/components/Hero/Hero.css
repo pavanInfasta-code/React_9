@@ -1,0 +1,169 @@
+.hero-section {
+    background-color: #E0F8F2;
+}
+
+.hero {
+    display: flex;
+    padding: 100px 0px;
+}
+
+.h-side {
+    /* flex: 0 0 calc(100%/2 - 20px); */
+}
+
+.hero-left h1 {
+    color: #2E2F35;
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 96px;
+}
+
+.hero-btn {
+    display: flex;
+}
+
+.h-btn button:hover{
+    background-color: whitesmoke;
+    color: #ff6d2c;
+    transition:  0.3s ease;
+
+}
+
+.stars p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2E2F35;
+}
+
+.star {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.h-star i{
+    color: goldenrod;
+
+}
+.hero-btn button {
+    background-color: #ff6d2c;
+    padding: 20px 60px;
+    border-radius: 15px;
+    font-size: 13px;
+    margin-right: 40px;
+    color: whitesmoke;
+    font-weight: 700;
+    border: 2px solid #2E2F35;
+    box-shadow: 3px 3px 0px #2E2F35;
+}
+
+.hero-left p {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 500;
+    color: #58595D;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------ */
+/*                  RESPONSIVE DESIGN                     */
+/* ------------------------------------------------------ */
+
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 70px 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .hero-left p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .hero-btn {
+        justify-content: center;
+    }
+
+    .hero-btn button {
+        margin-right: 20px;
+        padding: 16px 40px;
+    }
+}
+
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-left h1 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .hero-left p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .hero-btn {
+        /* flex-direction: column; */
+        gap: 20px;
+    }
+
+    .hero-btn button {
+        width: 100%;
+        margin-right: 0;
+        padding: 14px 20px;
+    }
+
+    .stars p {
+        font-size: 14px;
+    }
+
+    .hero-right img{
+    width:  80%;
+}
+}
+
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .hero-left h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .hero-left p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .hero-btn button {
+        padding: 12px 18px;
+        font-size: 12px;
+        box-shadow: 2px 2px 0px #2E2F35;
+    }
+
+    .star {
+        gap: 5px;
+    }
+}

@@ -1,0 +1,194 @@
+
+
+.orange-section{
+    background-color: #FF6D2C;
+    /* padding: 95px 0px; */
+}
+
+.orange{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 130px; */
+}
+
+
+.orange-left h2{
+    color: #ffff;
+    padding-top: 100px;
+
+    font-size: 86px;
+    font-weight: 700;
+    line-height: 96px;
+
+    margin-bottom: 17px;
+
+
+}
+
+.orange-left p{
+    font-size: 20px;
+    font-weight: 500;
+ color: #ffff;
+    margin-bottom: 48px;
+}
+
+
+.foot p{
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 500;
+ color: #ffff;
+}
+.orange-right img{
+    width: 80%;
+
+}
+
+.orange-btn{
+    display: flex;
+    gap: 40px;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+
+.o-star{
+    display: flex;
+    margin: 10px;
+}
+
+
+
+
+.o-star i{
+font-size: 16px;
+    color: white;
+
+}
+.s-p{
+
+    
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    
+}
+.o-btn button{
+    padding: 22px 44px;
+    box-shadow: 3px 3px 0px black;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 13px;
+    border-radius: 15px;
+}
+
+
+.o-btn button:hover{
+  color: #ec4d09;
+  transition: 0.5s ease;
+  border: 2px solid white;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.623);
+
+}
+
+
+/* =========================
+   Tablet (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+
+  .orange{
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .orange-left h2{
+    font-size: 56px;
+    line-height: 66px;
+    padding-top: 70px;
+    text-align: center;
+  }
+
+  .orange-left p{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .orange-btn{
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .orange-right{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* =========================
+   Mobile (≤600px)
+========================= */
+@media (max-width: 600px) {
+
+  .orange{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .orange-left h2{
+    font-size: 36px;
+    line-height: 44px;
+    padding-top: 50px;
+  }
+
+  .orange-left p{
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .orange-btn{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .o-btn button{
+    padding: 18px 32px;
+    font-size: 12px;
+  }
+
+  .orange-right{
+    width: 100%;
+  }
+
+  .star{
+    justify-content: center;
+  }
+}
+
+/* =========================
+   Small Mobile (≤360px)
+========================= */
+@media (max-width: 360px) {
+
+  .orange-left h2{
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .orange-left p{
+    font-size: 14px;
+  }
+
+  .o-btn button{
+    padding: 16px 28px;
+    font-size: 11px;
+  }
+
+  .s-p{
+    font-size: 14px;
+  }
+}
